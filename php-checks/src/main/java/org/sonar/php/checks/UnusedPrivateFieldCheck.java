@@ -32,7 +32,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = UnusedPrivateFieldCheck.KEY,
-  name = "Unused private fields should be removed",
+  name = "没有使用的私有字段应该被删除",
   priority = Priority.MAJOR,
   tags = {Tags.UNUSED})
 @ActivatedByDefault

@@ -42,7 +42,7 @@ import java.util.Set;
 
 @Rule(
   key = GenericExceptionCheck.KEY,
-  name = "Generic exceptions ErrorException, RuntimeException and Exception should not be thrown",
+  name = "不应该抛出通用的异常:ErrorException, RuntimeException和Exception",
   priority = Priority.MAJOR,
   tags = {Tags.CWE, Tags.ERROR_HANDLING, Tags.SECURITY})
 @ActivatedByDefault

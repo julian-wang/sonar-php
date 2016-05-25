@@ -1,8 +1,8 @@
 <p>
-  Global variables are a useful construct, but they should not be abused. Functions can access the global scope either through the <code>global</code> keyword or though the <code>$GLOBALS</code> array, but these practices considerably reduce the function's readability and reusability. Instead, the global variable should be passed as a parameter to the function.
+全局变量是一个有用的结构，但是它们不应该被滥用．函数应该通过关键字<code>global</code> 或者通过 <code>$GLOBALS</code> 数组访问全局作用域, 但这种做法大大降低了函数的可读性和可重用性. 相反的, 全局变量应该作为一个参数传给函数．
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 $myGlobalVariable;
 
@@ -14,7 +14,7 @@ function foo()
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 function foo($myStateVariable)
 {

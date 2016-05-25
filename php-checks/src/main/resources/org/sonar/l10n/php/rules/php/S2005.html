@@ -1,13 +1,13 @@
 <p>
-  There is no reason to concatenate literal strings. Doing so is an exercise is reducing code readability. Instead, the strings should be combined.
+ 没有理由连接字面值字符量，这样做是一种降低代码可读性的做法。相反的，字符串应该结合在一起。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 $msg = "Hello " . "${name}" . "!";  // Noncompliant
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 $msg = "Hello ${name}!";
 </pre>

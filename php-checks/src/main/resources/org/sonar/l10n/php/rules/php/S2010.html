@@ -1,15 +1,15 @@
 <p>
-  PHP has two sets of logical operators: <code>&amp;</code> / <code>||</code>, and <code>and</code> / <code>or</code>. The difference between the sets is precedence. Because <code>and</code> / <code>or</code> have a lower precedence than almost any other operator, using them instead of <code>&&</code> / <code>||</code> may not have the result you expect.
+PHP有两套逻辑运算符： <code>&amp;</code> / <code>||</code>, 和 <code>and</code> / <code>or</code>. 两套之间的差别就是优先级。. 因为 <code>and</code> / <code>or</code> 的优先级比其他操作符优先级低, 使用它们而不是<code>&&</code> / <code>||</code>可能导致的不到你预期的结果。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 $have_time = true;
 $have_money = false;
 $take_vacation = $have_time and $have_money;  // Noncompliant. $take_vacation == true.
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 $have_time = true;
 $have_money = false;

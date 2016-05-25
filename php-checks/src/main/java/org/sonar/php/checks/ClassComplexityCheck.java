@@ -36,7 +36,7 @@ import java.util.List;
 
 @Rule(
   key = ClassComplexityCheck.KEY,
-  name = "Classes should not be too complex",
+  name = "类不应该太复杂",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.UNDERSTANDABILITY)

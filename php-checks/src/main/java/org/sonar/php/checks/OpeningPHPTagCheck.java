@@ -29,7 +29,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = OpeningPHPTagCheck.KEY,
-  name = "\"<?php\" and \"<?=\" tags should be used",
+  name = "应该使用\"<?php\"和\"<?=\"标签",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION, Tags.PSR1})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

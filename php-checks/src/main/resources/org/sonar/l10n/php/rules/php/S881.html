@@ -1,20 +1,20 @@
 <p>
-  The use of increment and decrement operators in method calls or in combination with other arithmetic operators is not recommended, because:
+  在方法调用或与其他算术运算符组合使用时，不建议使用增量和递减运算符，因为：
 </p>
   <ul>
-    <li>It can significantly impair the readability of the code.</li>
-    <li>It introduces additional side effects into a statement, with the potential for undefined behavior.</li>
-    <li>It is safer to use these operators in isolation from any other arithmetic operators.</li>
+    <li>这会显着破坏代码的可读性。</li>
+    <li>这给语句引入了副作用，具有未定义行为潜力。</li>
+    <li>分开使用这些操作符与其他算术运算符是比较安全的。</li>
   </ul>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 $u8a = ++$u8b + $u8c--;
 $foo = $bar++ / 4;
 </pre>
 
-<h2>Compliant Solution</h2>
-<p>The following sequence is clearer and therefore safer:</p>
+<h2>规范的解决方案</h2>
+<p>下面的代码系列是清晰安全的：</p>
 <pre>
 ++$u8b;
 $u8a = $u8b + $u8c;
@@ -23,7 +23,7 @@ $foo = $bar / 4;
 $bar++;
 </pre>
 
-<h2>See</h2>
+<h2>参见</h2>
 <ul>
   <li>MISRA C:2004, 12.1 - Limited dependence should be placed on the C operator precedence rules in expressions.</li>
   <li>MISRA C:2004, 12.13 - The increment (++) and decrement (--) operators should not be mixed with other operators in an expression.</li>

@@ -1,21 +1,21 @@
 <p>
-  For better readability, do not put more than one statement on a single line.
+  为了更好的可读性，不要把多个语句放在一行上。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 if(someCondition) doSomething();
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 if(someCondition) {
   doSomething();
 }
 </pre>
 
-<h2>Exceptions</h2>
-<p>Anonymous functions containing a single statement are ignored.</p>
+<h2>例外</h2>
+<p>包含单一语句的匿名函数被忽略。</p>
 <pre>
 $max_comparator = function ($v) { return $v > 2; };           // Compliant
 $max_comparator = function ($v) { echo $v; return $v > 2; };  // Noncompliant

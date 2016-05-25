@@ -31,7 +31,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = VarKeywordUsageCheck.KEY,
-  name = "The \"var\" keyword should not be used",
+  name = "不应该使用\"var\"关键字",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION, Tags.PSR2})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.UNDERSTANDABILITY)

@@ -52,7 +52,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = ClassCouplingCheck.KEY,
-  name = "Classes should not be coupled to too many other classes (Single Responsibility Principle)",
+  name = "类不应该耦合太多其他类（单一单一职责原则）",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.ARCHITECTURE_CHANGEABILITY)

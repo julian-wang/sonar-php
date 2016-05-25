@@ -37,7 +37,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = ConstructorDependencyInversionCheck.KEY,
-  name = "Class constructors should not create other objects",
+  name = "类的构造函数不应该创建其他对象",
   priority = Priority.MAJOR,
   tags = {"design"})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.ARCHITECTURE_CHANGEABILITY)

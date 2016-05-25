@@ -37,7 +37,7 @@ import java.util.regex.Pattern;
 
 @Rule(
   key = InterfaceNameCheck.KEY,
-  name = "Interface names should comply with a naming convention",
+  name = "接口名称应遵循命名约定",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @ActivatedByDefault
@@ -55,7 +55,7 @@ public class InterfaceNameCheck extends PHPSubscriptionCheck {
 
   @RuleProperty(
     key = "format",
-    description = "Regular expression used to check the interface names against.",
+    description = "正则表达式用来检测接口名",
     defaultValue = DEFAULT_FORMAT)
   public String format = DEFAULT_FORMAT;
 

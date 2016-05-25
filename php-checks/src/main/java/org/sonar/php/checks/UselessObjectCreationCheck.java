@@ -34,7 +34,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = UselessObjectCreationCheck.KEY,
-  name = "Objects should not be created to be dropped immediately without being used",
+  name = "对象不应该被创建不使用就立即删除",
   tags = {"bug"},
   priority = Priority.CRITICAL)
 @ActivatedByDefault

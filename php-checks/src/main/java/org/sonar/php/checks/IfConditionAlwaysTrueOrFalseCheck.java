@@ -32,7 +32,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = IfConditionAlwaysTrueOrFalseCheck.KEY,
-  name = "Useless \"if(true) {...}\" and \"if(false){...}\" blocks should be removed",
+  name = "没用的if语句应该被移除",
   priority = Priority.MAJOR,
   tags = {Tags.BUG, Tags.CWE, Tags.SECURITY, Tags.MISRA})
 @ActivatedByDefault

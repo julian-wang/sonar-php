@@ -32,7 +32,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = SwitchWithoutDefaultCheck.KEY,
-  name = "\"switch\" statements should end with a \"case default\" clause",
+  name = "\"switch\"语句应该以\"case default\"结束",
   priority = Priority.MAJOR,
   tags = {Tags.CERT, Tags.CWE, Tags.MISRA})
 @ActivatedByDefault

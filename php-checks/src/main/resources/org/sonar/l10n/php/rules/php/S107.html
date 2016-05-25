@@ -1,15 +1,17 @@
 <p>
-  A long parameter list can indicate that a new structure should be created to wrap the numerous parameters or that the function is doing too many things.
+  长参数列表意味着：需要创建一种新的结构来包装这些参数，或者这个函数做了过多的工作。
 </p>
 
-<h2>Noncompliant Code Example</h2>
-<p>The following code snippet illustrates this rule with a maximum number of 4 parameters:</p>
+<h2>不规范的代码示例</h2>
+<p>
+ 下面的代码片段说明了：这个规则最多允许4个参数
+</p>
 <pre>
 function doSomething($param1, $param2, $param3, $param4, $param5) {
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 function doSomething($param1, $param2, $param3, $param4) {
 }

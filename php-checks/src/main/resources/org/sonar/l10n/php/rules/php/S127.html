@@ -1,19 +1,19 @@
 <p>
-  <code>for</code> loop stop conditions must be invariant (i.e. true at both the beginning and ending of every loop iteration). Ideally, this means that the stop condition is set to a local variable just before the loop begins.
+ <code>for</code> 循环的停止条件必须是不变的（即每个循环迭代的开始和结束都应该为true）。理想条件下，这意味这在循环开始之前，停止条件被设置为局部变量。
 </p>
 <p>
-  Stop conditions that are not invariant are difficult to understand and maintain, and will likely lead to the introduction of errors in the future.
+ 停止条件可变会难以理解和维护，这会导致错误在未来被引入。
 </p>
 <p>
-  This rule tracks three types of non-invariant stop conditions:
+  此规则跟踪三种类型的非不变的停止条件：
 </p>
 <ul>
-  <li>When the loop counters are updated in the body of the <code>for</code> loop</li>
-  <li>When the stop condition depend upon a method call</li>
-  <li>When the stop condition depends on an object property, since such properties could change during the execution of the loop.</li>
+  <li>当循环计数器在 <code>for</code>循环中更新时</li>
+  <li>当停止条件依赖函数调用时</li>
+  <li>当停止条件取决于对象属性，而这种属性在循环执行期间可以改变时。</li>
 </ul>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 for ($i = 0; $i < 10; $i++) {
   echo $i;
@@ -23,14 +23,14 @@ for ($i = 0; $i < 10; $i++) {
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 for ($i = 0; $i < 10; $i++) {
   echo $i;
 }
 </pre>
 
-<h2>See</h2>
+<h2>参见</h2>
 <ul>
   <li>MISRA C:2004, 13.6 - Numeric variables being used within a for loop for iteration counting shall not be modified in the body of the loop.</li>
   <li>MISRA C++:2008, 6-5-3 - The loop-counter shall not be modified within condition or statement.</li>

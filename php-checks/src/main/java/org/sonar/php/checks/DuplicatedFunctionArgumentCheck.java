@@ -35,7 +35,7 @@ import java.util.Set;
 
 @Rule(
   key = DuplicatedFunctionArgumentCheck.KEY,
-  name = "Function argument names should be unique\n",
+  name = "函数参数的名称应该是唯一的\n",
   priority = Priority.CRITICAL,
   tags = {Tags.PITFALL})
 @ActivatedByDefault

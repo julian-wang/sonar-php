@@ -37,7 +37,7 @@ import java.util.List;
 
 @Rule(
   key = TooManyLinesInFunctionCheck.KEY,
-  name = "Functions should not have too many lines",
+  name = "函数不应该有太多行",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @ActivatedByDefault

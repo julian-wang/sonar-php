@@ -39,7 +39,7 @@ import java.util.Set;
 
 @Rule(
   key = FunctionDefineOutsideClassCheck.KEY,
-  name = "Functions and variables should not be defined outside of classes",
+  name = "函数和变量不应该在类的外部定义",
   priority = Priority.MAJOR,
   tags = {Tags.CONVENTION})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.UNIT_TESTABILITY)

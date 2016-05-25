@@ -39,7 +39,7 @@ import java.util.Deque;
 
 @Rule(
   key = TooManyReturnCheck.KEY,
-  name = "Functions should not contain too many return statements",
+  name = "函数不应该包含太多的返回语句",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @ActivatedByDefault

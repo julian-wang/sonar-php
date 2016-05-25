@@ -30,7 +30,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = ForHidingWhileCheck.KEY,
-  name = "A \"while\" loop should be used instead of a \"for\" loop",
+  name = "应当用while循环替代for循环",
   priority = Priority.MINOR,
   tags = Tags.CLUMSY)
 @ActivatedByDefault

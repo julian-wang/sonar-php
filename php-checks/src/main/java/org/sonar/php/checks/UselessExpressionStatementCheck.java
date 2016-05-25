@@ -39,7 +39,7 @@ import java.util.List;
 
 @Rule(
   key = UselessExpressionStatementCheck.KEY,
-  name = "Non-empty statements should change control flow or have at least one side-effect",
+  name = "非空语句应该改变控制流或者至少有作用",
   priority = Priority.CRITICAL,
   tags = {Tags.UNUSED, Tags.CWE, Tags.MISRA, Tags.BUG})
 @ActivatedByDefault

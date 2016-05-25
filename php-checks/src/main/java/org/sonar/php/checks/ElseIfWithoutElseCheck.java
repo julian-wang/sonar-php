@@ -35,7 +35,7 @@ import java.util.List;
 
 @Rule(
   key = ElseIfWithoutElseCheck.KEY,
-  name = "\"if ... else if\" constructs shall be terminated with an \"else\" clause",
+  name = "\"if ... else if\"结构应该以\"else\"子句结束",
   priority = Priority.MAJOR,
   tags = {Tags.CERT, Tags.MISRA})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.LOGIC_RELIABILITY)

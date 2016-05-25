@@ -32,7 +32,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = EvalUseCheck.KEY,
-  name = "Code should not be dynamically injected and executed to prevent Eval Injection vulnerability",
+  name = "代码不应该动态注入和执行，防止Eval注入漏洞",
   priority = Priority.CRITICAL,
   tags = {Tags.SECURITY, Tags.CWE, Tags.OWASP_A3})
 @ActivatedByDefault

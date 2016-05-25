@@ -30,7 +30,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = CallToIniSetCheck.KEY,
-  name = "Configuration should not be changed dynamically",
+  name = "配置不应该动态被改变",
   priority = Priority.CRITICAL,
   tags = {Tags.PITFALL})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.INSTRUCTION_RELIABILITY)

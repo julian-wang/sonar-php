@@ -33,7 +33,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = "S1998",
-  name = "References should not be passed to function calls",
+  name = "函数调用时不应该引用传递",
   priority = Priority.CRITICAL,
   tags = {Tags.OBSOLETE, Tags.PERFORMANCE, Tags.CWE})
 @ActivatedByDefault

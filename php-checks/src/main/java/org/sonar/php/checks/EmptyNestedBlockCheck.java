@@ -39,7 +39,7 @@ import java.util.List;
 
 @Rule(
   key = EmptyNestedBlockCheck.KEY,
-  name = "Nested blocks of code should not be left empty",
+  name = "代码嵌套块不应该是空的",
   priority = Priority.MAJOR,
   tags = Tags.BUG)
 @ActivatedByDefault

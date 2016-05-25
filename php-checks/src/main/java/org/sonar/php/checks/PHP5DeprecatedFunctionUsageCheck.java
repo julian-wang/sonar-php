@@ -36,7 +36,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = PHP5DeprecatedFunctionUsageCheck.KEY,
-  name = "Functions deprecated in PHP 5 should not be used",
+  name = "PHP5中不赞成使用的函数不应该再使用",
   priority = Priority.MAJOR,
   tags = {Tags.OBSOLETE})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.LANGUAGE_RELATED_PORTABILITY)

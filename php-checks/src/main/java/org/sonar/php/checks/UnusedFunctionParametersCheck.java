@@ -46,7 +46,7 @@ import java.util.List;
 
 @Rule(
   key = UnusedFunctionParametersCheck.KEY,
-  name = "Unused function parameters should be removed",
+  name = "没有使用的函数参数应该被去除",
   priority = Priority.MAJOR,
   tags = {Tags.UNUSED, Tags.MISRA})
 @ActivatedByDefault

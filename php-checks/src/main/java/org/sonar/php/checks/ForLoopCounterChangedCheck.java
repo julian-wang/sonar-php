@@ -40,7 +40,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = ForLoopCounterChangedCheck.KEY,
-  name = "\"for\" loop stop conditions should be invariant",
+  name = "\"for\"循环的停止条件应该不可变",
   priority = Priority.MAJOR,
   tags = {Tags.PITFALL, Tags.MISRA})
 @ActivatedByDefault

@@ -36,7 +36,7 @@ import java.util.Set;
 
 @Rule(
   key = IdenticalOperandsInBinaryExpressionCheck.KEY,
-  name = "Identical expressions should not be used on both sides of a binary operator",
+  name = "二目运算符的两边不应使用同一表达式",
   priority = Priority.CRITICAL,
   tags = {Tags.BUG, Tags.CERT})
 @ActivatedByDefault

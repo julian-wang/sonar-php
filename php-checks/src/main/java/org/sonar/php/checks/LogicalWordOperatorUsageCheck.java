@@ -37,7 +37,7 @@ import java.util.List;
 
 @Rule(
   key = LogicalWordOperatorUsageCheck.KEY,
-  name = "\"&&\" and \"||\" should be used",
+  name = "应该使用\"&&\" 和 \"||\"",
   priority = Priority.MAJOR,
   tags = {Tags.SUSPICIOUS})
 @ActivatedByDefault

@@ -1,16 +1,17 @@
 <p>
-  If you throw a general exception type, such as ErrorException, RuntimeException, or Exception in a library or framework, it forces consumers to catch all exceptions, including unknown exceptions that they do not know how to handle.
-</p>
-<p>
-  Instead, either throw a subtype that already exists in the Standard PHP Library, or create your own type that derives from Exception.
+  如果你抛出一个通用异常，例如 ErrorException, RuntimeException，或者库异常、框架异常，这将强制消费者捕获所有异常，包括他们也不知道如何处理的未知异常.
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<p>
+  相反的，你应该抛出一个PHP标准库里已存在的子类型，或者创建继承自Exception的你自己的类型。
+</p>
+
+<h2>不规范的代码示例</h2>
 <pre>
 throw new Exception();  // Noncompliant
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 throw new InvalidArgumentException();
 // or
@@ -18,16 +19,16 @@ throw new UnexpectedValueException();
 </pre>
 
 
-<h2>Exceptions</h2>
+<h2>例外</h2>
 <p>
-  Generic exceptions in the signatures of overriding methods are ignored.
+  在函数重写的签名中的通用异常将被忽略。
 </p>
 <pre>
 @Override
 public void myMethod() throws Exception {...}
 </pre>
 
-<h2>See</h2>
+<h2>参见</h2>
 <ul>
   <li><a href="http://cwe.mitre.org/data/definitions/397.html">MITRE, CWE-397</a> - Declaration of Throws for Generic Exception</li>
 </ul>

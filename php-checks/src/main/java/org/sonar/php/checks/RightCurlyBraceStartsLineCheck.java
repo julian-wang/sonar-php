@@ -42,7 +42,7 @@ import java.util.List;
 
 @Rule(
   key = RightCurlyBraceStartsLineCheck.KEY,
-  name = "A close curly brace should be located at the beginning of a line",
+  name = "闭合括号（右括号）应该位于新的一行的开头",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @ActivatedByDefault

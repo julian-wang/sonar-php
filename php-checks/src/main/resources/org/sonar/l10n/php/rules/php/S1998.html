@@ -1,23 +1,24 @@
 <p>
-  Passing a reference to a function parameter means that any modifications the method makes to the parameter will be made to the original value as well, since references have the effect of pointing two variables at the same memory space. This feature can be difficult to use correctly, particularly if the callee is not expecting a reference, and the improper use of references in function calls can make code less efficient rather than more efficient.
+  传递一个引用给函数参数意味着函数所做的任何修改都会影响原值，因为引用是将两变量指到了同一块内存。这个特性很难正确的使用，特别是调用者不期待这是一个引用，而函数调用的不正确使用会使代码更加低效而不是高效。
 </p>
 <p>
-  Further, according to the PHP manual:
+  此外，根据PHP手册：
 </p>
+
 <blockquote>
-  As of PHP 5.3.0, you will get a warning saying that "call-time pass-by-reference" is deprecated... And as of PHP 5.4.0, call-time pass-by-reference was removed, so using it will raise a fatal error.
+  在PHP 5.3.0中，你会得到一个"call-time pass-by-reference"的警告，这已经过时。在PHP 5.4.0中，调用时引用传递已经被去掉了，这样会导致一个致命错误。
 </blockquote>
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 myfun(&$name);  // Noncompliant
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 myfun($name);
 </pre>
 
-<h2>See</h2>
+<h2>参见</h2>
 <ul>
   <li><a href="http://cwe.mitre.org/data/definitions/374">MITRE, CWE-374</a> - Weakness Base Passing Mutable Objects to an Untrusted Method</li>
 </ul>

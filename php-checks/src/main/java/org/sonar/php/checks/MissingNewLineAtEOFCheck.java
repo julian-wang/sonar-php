@@ -30,7 +30,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = MissingNewLineAtEOFCheck.KEY,
-  name = "Files should contain an empty new line at the end",
+  name = "文件应该包含一个空的新行结束",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

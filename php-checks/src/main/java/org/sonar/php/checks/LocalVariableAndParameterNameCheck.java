@@ -47,7 +47,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = LocalVariableAndParameterNameCheck.KEY,
-  name = "Local variable and function parameter names should comply with a naming convention",
+  name = "本地变量和函数参数名称应该遵循命名约定",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

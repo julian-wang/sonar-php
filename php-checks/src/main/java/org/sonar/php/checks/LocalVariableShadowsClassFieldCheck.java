@@ -51,7 +51,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = LocalVariableShadowsClassFieldCheck.KEY,
-  name = "Local variables should not have the same name as class fields",
+  name = "本地变量不应该于类字段同名",
   priority = Priority.MAJOR,
   tags = {Tags.PITFALL})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.DATA_RELIABILITY)

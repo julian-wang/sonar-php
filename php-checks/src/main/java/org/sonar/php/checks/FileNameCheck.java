@@ -33,7 +33,7 @@ import java.util.regex.Pattern;
 
 @Rule(
   key = FileNameCheck.KEY,
-  name = "File names should comply with a naming convention",
+  name = "文件名应符合命名约定",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

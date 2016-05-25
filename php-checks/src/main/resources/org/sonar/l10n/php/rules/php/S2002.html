@@ -1,13 +1,14 @@
 <p>
-  Just as pain is your body's way of telling you something is wrong, errors are PHP's way of telling you there's something you need to fix. Neither pain, nor PHP errors should be ignored.
+　正如疼痛是一种身体报警的方式，错误也是一种PHP告诉你有些东西需要修复的方式。疼痛和PHP错误都不应该被忽略。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+
+<h2>不规范的代码示例</h2>
 <pre>
 @doSomethingDangerous($password);  // Noncompliant; '@' silences errors from function call
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 doSomethingDangerous($password);
 </pre>

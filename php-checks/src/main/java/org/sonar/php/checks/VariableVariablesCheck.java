@@ -30,7 +30,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = VariableVariablesCheck.KEY,
-  name = "Variable variables should not be used",
+  name = "可变变量不应该被使用",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @ActivatedByDefault

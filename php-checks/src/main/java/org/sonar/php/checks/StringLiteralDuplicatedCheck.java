@@ -38,7 +38,7 @@ import java.util.Map;
 
 @Rule(
   key = StringLiteralDuplicatedCheck.KEY,
-  name = "String literals should not be duplicated",
+  name = "字符串字面值不应该重复",
   priority = Priority.MINOR,
   tags = {Tags.DESIGN})
 @ActivatedByDefault

@@ -30,7 +30,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = AtLeastThreeCasesInSwitchCheck.KEY,
-  name = "\"switch\" statements should have at least 3 \"case\" clauses",
+  name = "\"switch\"语句至少有3个\"case\"子句",
   priority = Priority.MINOR,
   tags = {Tags.MISRA})
 @ActivatedByDefault

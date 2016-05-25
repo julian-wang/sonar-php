@@ -37,7 +37,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = ConstructorDeclarationCheck.KEY,
-  name = "PHP 4 constructor declarations should not be used",
+  name = "不应再使用PHP4的构造函数声明",
   priority = Priority.MAJOR,
   tags = {Tags.PITFALL})
 @ActivatedByDefault

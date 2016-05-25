@@ -27,7 +27,7 @@ import org.sonar.squidbridge.annotations.NoSqale;
 
 @Rule(
   key = TodoTagPresenceCheck.KEY,
-  name = "\"TODO\" tags should be handled",
+  name = "\"TODO\"标签应该被处理",
   priority = Priority.INFO)
 @ActivatedByDefault
 @NoSqale

@@ -41,7 +41,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = CallParentConstructorCheck.KEY,
-  name = "PHP 4 style calls to parent constructors should not be used in PHP5 \"__construct\" functions",
+  name = "在PHP5的构造函数中，不应该使用PHP4风格调用父类的构造函数。",
   priority = Priority.MAJOR,
   tags = {Tags.CONVENTION})
 @ActivatedByDefault

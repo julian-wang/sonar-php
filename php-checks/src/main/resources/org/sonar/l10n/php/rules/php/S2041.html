@@ -1,14 +1,14 @@
 <p>
-  <code>echo</code> can be called with or without parentheses, but it is best practice to leave parentheses off the call because using parentheses with multiple arguments will result in a parse error.
+ 带不带括号都可以调用<code>echo</code>，但是最好的做法是不带括号，因为使用括号时多个参数会导致一个解析错误。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 echo("Hello");  // Noncompliant, but it works
 echo("Hello", "World"); // Noncompliant. Parse error
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 echo "Hello";
 echo "Hello","World!";

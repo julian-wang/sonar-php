@@ -1,22 +1,24 @@
 <p>
-  <code>if</code> statements with conditions that are always false have the effect of making blocks of code non-functional. <code>if</code> statements with conditions that are always true are completely redundant, and make the code less readable.
-
-  <p>
-  There are three possible causes for the presence of such code:
-  </p>
-  <ul>
-    <li>An if statement was changed during debugging and that debug code has been committed.</li>
-    <li>Some value was left unset.</li>
-    <li>Some logic is not doing what the programmer thought it did.</li>
-  </ul>
-
+  <code>if(false)</code>语句使代码块没有功能，<code>if(true)</code>语句纯粹是多余，而且使代码可读性变差。</br>
 </p>
+
 <p>
-In any of these cases, unconditional <code>if</code> statements should be removed.
+  这里有三种出现这种代码的可能：</br>
+
+  <ul>
+    <li>调试的时候修改了<code>if</code>语句，而且调试代码被提交了。</li>
+    <li>有些变量没有被重置。</li>
+    <li>有些逻辑没有按照程序员认为的那样执行。</li>
+  </ul>
 </p>
 
 
-<h2>Noncompliant Code Example</h2>
+<p>
+  在这些条件下，没有条件的<code>if</code> 语句都应该被移除。
+</p>
+
+
+<h2>不规范的代码示例</h2>
 <pre>
 if (true) {  // Noncompliant
   doSomething();
@@ -27,12 +29,12 @@ if (false) {  // Noncompliant
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 doSomething();
 </pre>
 
-<h2>See</h2>
+<h2>参见</h2>
 <ul>
   <li><a href="http://cwe.mitre.org/data/definitions/489.html">MITRE, CWE-489</a> - Leftover Debug Code</li>
   <li><a href="http://cwe.mitre.org/data/definitions/570.html">MITRE, CWE-570</a> - Expression is Always False</li>

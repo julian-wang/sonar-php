@@ -36,7 +36,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = IncrementDecrementInSubExpressionCheck.KEY,
-  name = "Increment (++) and decrement (--) operators should not be used in a method call or mixed with other operators in an expression",
+  name = "自增自减运算符不应在方法调用中使用，也不应与其他运算符在表达式中混合使用",
   priority = Priority.MAJOR,
   tags = {Tags.CERT, Tags.MISRA})
 @ActivatedByDefault

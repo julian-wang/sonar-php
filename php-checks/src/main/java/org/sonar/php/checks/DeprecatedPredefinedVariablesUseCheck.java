@@ -33,7 +33,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = DeprecatedPredefinedVariablesUseCheck.KEY,
-  name = "Deprecated predefined variables should not be used",
+  name = "不应使用使用过时的预定义变量",
   priority = Priority.MAJOR,
   tags = {Tags.PITFALL})
 @ActivatedByDefault

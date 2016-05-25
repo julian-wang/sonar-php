@@ -33,7 +33,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = SelfAssignmentCheck.KEY,
-  name = "Variables should not be self-assigned",
+  name = "变量不应该是自我赋值",
   tags = {"bug", "cert"},
   priority = Priority.MAJOR)
 @ActivatedByDefault

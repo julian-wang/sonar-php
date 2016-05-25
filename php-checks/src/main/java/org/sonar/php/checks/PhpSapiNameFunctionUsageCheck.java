@@ -30,7 +30,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = PhpSapiNameFunctionUsageCheck.KEY,
-  name = "\"php_sapi_name()\" should not be used",
+  name = "不应当使用\"php_sapi_name()\"",
   priority = Priority.MINOR,
   tags = {Tags.PERFORMANCE})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.CPU_EFFICIENCY)

@@ -38,7 +38,7 @@ import java.util.regex.Pattern;
 
 @Rule(
   key = KeywordsAndConstantsNotLowerCaseCheck.KEY,
-  name = "PHP keywords and constants \"true\", \"false\", \"null\" should be in lower case",
+  name = "PHP关键字和常量\"true\", \"false\", \"null\" 都应该使用小写",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION, Tags.PSR2})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

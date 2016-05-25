@@ -34,7 +34,7 @@ import java.util.List;
 
 @Rule(
   key = CodeFollowingJumpStatementCheck.KEY,
-  name = "Jump statements should not be followed by other statements",
+  name = "跳转语句后不应该跟着其他语句",
   priority = Priority.MAJOR,
   tags = {Tags.MISRA, Tags.CERT, Tags.CWE, Tags.UNUSED})
 @ActivatedByDefault

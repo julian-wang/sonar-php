@@ -35,7 +35,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = BooleanEqualityComparisonCheck.KEY,
-  name = "Literal boolean values should not be used in condition expressions",
+  name = "在条件表达式中不要使用字面布尔值",
   priority = Priority.MINOR,
   tags = Tags.CLUMSY)
 @ActivatedByDefault

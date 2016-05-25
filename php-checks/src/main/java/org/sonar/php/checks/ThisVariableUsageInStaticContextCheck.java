@@ -33,7 +33,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = ThisVariableUsageInStaticContextCheck.KEY,
-  name = "\"$this\" should not be used in a static context",
+  name = "不应该在静态上下文中使用\"$this\"",
   priority = Priority.BLOCKER,
   tags = {Tags.BUG})
 @ActivatedByDefault

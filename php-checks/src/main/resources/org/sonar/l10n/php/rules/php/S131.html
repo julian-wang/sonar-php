@@ -1,8 +1,8 @@
 <p>
-  The requirement for a final <code>[default|OTHERS]</code> clause is defensive programming. The clause should either take appropriate action, or contain a suitable comment as to why no action is taken. Even when the <code>switch</code> covers all current values of an <code>enum</code>, a <code>default</code> case should still be used because there is no guarantee that the <code>enum</code> won't be extended.
+ 最后必须的<code>[default|OTHERS]</code>子句是一种防御型编程。 这条语句应该采取适当的措施，或者适当的注释为什么没有采取动作。 即使<code>switch</code> 覆盖了<code>enum</code>当前所有的值，也依然应该使用<code>default</code>，因为没法保证<code>enum</code>不会扩展。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 switch ($param) {  //missing default clause
   case 0:
@@ -26,7 +26,7 @@ switch ($param) {
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 switch ($param) {
   case 0:
@@ -41,7 +41,7 @@ switch ($param) {
 }
 </pre>
 
-<h2>See</h2>
+<h2>参见</h2>
 <ul>
   <li>MISRA C:2004, 15.0 - The MISRA C switch syntax shall be used.</li>
   <li>MISRA C:2004, 15.3 - The final clause of a switch statement shall be the default clause</li>

@@ -38,7 +38,7 @@ import java.util.regex.Pattern;
 
 @Rule(
   key = FieldNameCheck.KEY,
-  name = "Field names should comply with a naming convention",
+  name = "字段名称应遵循命名约定",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

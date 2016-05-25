@@ -32,7 +32,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = EchoWithParenthesisCheck.KEY,
-  name = "Parentheses should not be used for calls to \"echo\"",
+  name = "不要使用括号调用\"echo\"",
   priority = Priority.MAJOR,
   tags = {Tags.PITFALL})
 @ActivatedByDefault

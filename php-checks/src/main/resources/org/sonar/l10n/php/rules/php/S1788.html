@@ -1,15 +1,16 @@
 <p>
-PHP is one of this powerful language allowing to define a default value for a method argument. But all method arguments with a default value should be declared after the method arguments without default value.
+PHP是一种强大的语言，允许为函数参数定义一个默认值．但是所有带有默认值的函数参数都应该放在不带默认值的函数参数之后．
 </p>
 
-<h2>Noncompliant Code Example</h2>
-<p>In the following case, calling <code>makeyogurt("raspberry")</code> won't lead to the expected result :</p>
+<h2>不规范的代码示例</h2>
+<p>在下面的例子中，调用<code>makeyogurt("raspberry")</code> 并不会得到预期的结果：</p>
 <pre>
 function makeyogurt($type = "acidophilus", $flavour){...}
 </pre>
-<p>The following warning will be generated at runtime: <code>Missing argument 2 in call to makeyogurt()</code></p>
 
-<h2>Compliant Solution</h2>
+<p>下面的警告会在运行时产生： <code>Missing argument 2 in call to makeyogurt()</code></p>
+
+<h2>规范的解决方案</h2>
 <pre>
 function makeyogurt($flavour, $type = "acidophilus", ){...}
 </pre>

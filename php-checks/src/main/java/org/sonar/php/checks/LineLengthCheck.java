@@ -36,7 +36,7 @@ import java.util.List;
 
 @Rule(
   key = LineLengthCheck.KEY,
-  name = "Lines should not be too long",
+  name = "代码行不应该太长",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

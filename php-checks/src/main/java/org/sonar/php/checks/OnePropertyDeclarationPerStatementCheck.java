@@ -29,7 +29,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = OnePropertyDeclarationPerStatementCheck.KEY,
-  name = "More than one property should not be declared per statement",
+  name = "不应该在一个语句中声明不止一个属性",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION, Tags.PSR2})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

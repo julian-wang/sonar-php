@@ -47,7 +47,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = OverridingMethodSimplyCallParentCheck.KEY,
-  name = "Overriding methods should do more than simply call the same method in the super class",
+  name = "函数重写应该不只是简单的调用父类的同名函数",
   priority = Priority.MINOR,
   tags = Tags.CLUMSY)
 @ActivatedByDefault

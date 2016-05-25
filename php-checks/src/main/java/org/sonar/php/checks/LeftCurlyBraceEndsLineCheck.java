@@ -55,7 +55,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = LeftCurlyBraceEndsLineCheck.KEY,
-  name = "An open curly brace should be located at the end of a line",
+  name = "开括号应该在一行的末尾",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

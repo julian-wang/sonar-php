@@ -1,5 +1,5 @@
 <p>
-  The following predefined variables are deprecated and should be replaced by the new versions:
+  下列预定义变量已经过时/不赞成使用，应当用新的版本替代。
 </p>
 <table>
   <tr>
@@ -36,12 +36,12 @@
   </tr>
 </table>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 echo 'Name parameter value: ' . $HTTP_GET_VARS["name"];
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 echo 'Name parameter value: ' . $_GET["name"];
 </pre>

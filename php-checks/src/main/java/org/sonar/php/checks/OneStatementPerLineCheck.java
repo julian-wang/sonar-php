@@ -39,7 +39,7 @@ import java.util.Set;
 
 @Rule(
   key = OneStatementPerLineCheck.KEY,
-  name = "Statements should be on separate lines",
+  name = "多个语句应当放在分开的行中",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION, Tags.PSR2})
 @ActivatedByDefault

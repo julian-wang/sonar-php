@@ -1,9 +1,8 @@
 <p>
-  Any statement (other than a null statement, which means a statement containing only a semicolon <code>;</code>)
-  which has no side effect and does not result in a change of control flow will normally indicate a programming error, and therefore should be refactored.
+  任何声明（除空语句，这意味着一个语句只包含一个分号；）具有无任何作用、不改变控制流，通常预示着一个程序错误，因此被应该重构。
 </p>
 
-<h1>Noncompliant Code Example</h1>
+<h1>不规范的代码示例</h1>
 
 <pre>
 $a == 1; // Noncompliant; was assignment intended?
@@ -11,7 +10,7 @@ $a < $b; // Noncompliant; have we forgotten to assign the result to a variable?
 </pre>
 
 
-<h1>See</h1>
+<h1>参见</h1>
 
 <ul>
   <li><a href="http://cwe.mitre.org/data/definitions/482">MITRE, CWE-482</a> - Comparing instead of Assigning</li>

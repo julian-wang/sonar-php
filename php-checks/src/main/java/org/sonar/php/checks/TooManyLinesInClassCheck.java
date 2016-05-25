@@ -33,7 +33,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = TooManyLinesInClassCheck.KEY,
-  name = "Classes should not have too many lines",
+  name = "类不应该含有太多行",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.ARCHITECTURE_CHANGEABILITY)
@@ -48,7 +48,7 @@ public class TooManyLinesInClassCheck extends PHPVisitorCheck {
   private static final int DEFAULT = 200;
 
   @RuleProperty(
-    key = "maximumLinesThreshold",
+    key = "最大行阈值",
     defaultValue = "" + DEFAULT)
   public int maximumLinesThreshold = DEFAULT;
 

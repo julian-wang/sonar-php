@@ -42,7 +42,7 @@ import java.util.regex.Pattern;
 
 @Rule(
   key = ConstantNameCheck.KEY,
-  name = "Constant names should comply with a naming convention",
+  name = "常量名称应遵循命名约定",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @ActivatedByDefault

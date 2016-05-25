@@ -1,12 +1,12 @@
-<p>There is no good reason to create a new object to not do anything with it. Most of the time, this is due to a missing piece of code and so could lead to an unexpected behavior in production.</p>
-<h2>Noncompliant Code Example</h2>
+<p>没有理由创造一个新的对象，而不做任何事情。大多数时候，这是因为缺失了一段代码，这样会在产品中导致一个意想不到的行为。</p>
+<h2>不规范的代码示例</h2>
 
 <pre>
 if ($x &lt; 0) {
   new foo;  // Noncompliant
 }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 
 <pre>
 $var = NULL;

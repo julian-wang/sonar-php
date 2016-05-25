@@ -1,20 +1,21 @@
 <p>
-  Sharing some naming conventions is a key point to make it possible for a team to efficiently collaborate. This rule allows to check that all function names match a provided regular expression.
+    共享一些命名规则是使团队高效协作的一个关键，这条规则允许检查所有的函数名称是否匹配一个正则表达式。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <p>With default provided regular expression: ^[a-z][a-zA-Z0-9]*$</p>
 <pre>
 function DoSomething(){...}
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 function doSomething(){...}
 </pre>
 
-<h2>Exceptions</h2>
-<p>Methods with an <code>@inheritdoc</code> annotation,  as well as magic methods <code>(__construct(), __destruct(), __call(), __callStatic(), __get(), __set(), __isset(), __unset(), __sleep(), __wakeup(), __toString(), __invoke(), __set_state(), __clone(), __debugInfo())</code> are ignored.</p>
+<h2>例外</h2>
+<p>（带有<code>@inheritdoc</code>标注的函数,  还有魔术函数 <code>(__construct(), __destruct(), __call(), __callStatic(), __get(), __set(), __isset(), __unset(), __sleep(), __wakeup(), __toString(), __invoke(), __set_state(), __clone(), __debugInfo())</code> 忽略这条规则。）</p>
+
 <pre>
 function __construct(){...}
 function __destruct(){...}

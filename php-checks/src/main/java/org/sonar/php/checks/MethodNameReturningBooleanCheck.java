@@ -33,7 +33,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = MethodNameReturningBooleanCheck.KEY,
-  name = "The names of methods with boolean return values should start with \"is\" or \"has\"",
+  name = "返回布尔值的函数名应该以\"is\" 或者 \"has\"开头",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.UNDERSTANDABILITY)

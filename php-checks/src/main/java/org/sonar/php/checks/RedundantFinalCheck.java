@@ -38,7 +38,7 @@ import java.util.List;
 
 @Rule(
   key = RedundantFinalCheck.KEY,
-  name = "\"final\" should not be used redundantly",
+  name = "不应该冗余的使用\"\"final\"",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

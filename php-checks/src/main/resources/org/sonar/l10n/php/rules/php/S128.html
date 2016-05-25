@@ -1,8 +1,8 @@
 <p>
-  When the execution is not explicitly terminated at the end of a switch case, it continues to execute the statements of the following case. While this is sometimes intentional, it often is a mistake which leads to unexpected behavior.
+  当在switch case的结尾没有显式的终结执行，它会继续执行case之后的语句。有时候这是故意为之，但通常这是一个导致非预期行为的错误。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 switch ($myVariable) {
   case 1:
@@ -16,7 +16,7 @@ switch ($myVariable) {
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 switch ($myVariable) {
   case 1:
@@ -31,8 +31,8 @@ switch ($myVariable) {
 }
 </pre>
 
-<h2>Exception</h2>
-<p>This rule is relaxed in following cases:</p>
+<h2>例外</h2>
+<p>下面的情况下会放松这条规则：</p>
 <pre>
 switch ($myVariable) {
   case 0:                  // Empty case used to specify the same behavior for a group of cases.
@@ -51,7 +51,7 @@ switch ($myVariable) {
 }
 </pre>
 
-<h2>See</h2>
+<h2>参见</h2>
 <ul>
   <li>MISRA C:2004, 15.0 - The MISRA C switch syntax shall be used.</li>
   <li>MISRA C:2004, 15.2 - An unconditional break statement shall terminate every non-empty switch clause</li>

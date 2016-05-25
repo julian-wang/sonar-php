@@ -1,8 +1,8 @@
 <p>
-  Merging collapsible <code>if</code> statements increases the code's readability.
+  合并可折叠的 <code>if</code>语句，以增加代码的可读性。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 if (condition1) {
   if (condition2) {
@@ -11,7 +11,7 @@ if (condition1) {
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 if (condition1 && condition2) {
   ...

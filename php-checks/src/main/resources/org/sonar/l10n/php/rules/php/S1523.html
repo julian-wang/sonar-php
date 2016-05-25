@@ -1,15 +1,17 @@
 <p>
-  The <code>eval</code> function is a way to run arbitrary code at run-time.
+<code>eval</code>是一种运行时执行任意代码的函数。
 </p>
-<p>According to the PHP documentation</p>
-<blockquote>The eval() language construct is very dangerous because it allows execution of arbitrary PHP code. Its use thus is discouraged. If you have carefully verified that there is no other option than to use this construct, pay special attention not to pass any user provided data into it without properly validating it beforehand.</blockquote>
 
-<h2>Noncompliant Code Example</h2>
+<p>根据PHP文档</p>
+
+<blockquote>eval()语言结构非常危险，因为它允许任意PHP代码执行。它的使用是不被鼓励的。如果你仔细验证过，只能使用它而没有别的选择时，特别要注意不要不加验证就传递用户提供的数据。</blockquote>
+
+<h2>不规范的代码示例</h2>
 <pre>
 eval($code_to_be_dynamically_executed)
 </pre>
 
-<h2>See</h2>
+<h2>参见</h2>
 <ul>
   <li><a href="http://cwe.mitre.org/data/definitions/95.html">MITRE CWE-95</a> - CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')</li>
   <li><a href="https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_(XSS)">OWASP Top Ten 2013 Category A3</a> - Cross-Site Scripting (XSS)</li>

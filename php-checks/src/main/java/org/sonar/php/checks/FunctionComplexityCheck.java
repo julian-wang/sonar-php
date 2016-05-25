@@ -37,7 +37,7 @@ import java.util.List;
 
 @Rule(
   key = FunctionComplexityCheck.KEY,
-  name = "Functions should not be too complex",
+  name = "函数不应该太过复杂",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @ActivatedByDefault
@@ -52,7 +52,7 @@ public class FunctionComplexityCheck extends PHPSubscriptionCheck {
   public static final int DEFAULT = 20;
 
   @RuleProperty(
-    key = "threshold",
+    key = "阈值",
     defaultValue = "" + DEFAULT)
   int threshold = DEFAULT;
 

@@ -39,7 +39,7 @@ import java.util.List;
 
 @Rule(
   key = NonEmptyCaseWithoutBreakCheck.KEY,
-  name = "Switch cases should end with an unconditional \"break\" statement",
+  name = "Switch cases应该无条件的以\"break\"结束",
   priority = Priority.CRITICAL,
   tags = {Tags.CERT, Tags.CWE, Tags.PITFALL, Tags.MISRA})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.LOGIC_RELIABILITY)

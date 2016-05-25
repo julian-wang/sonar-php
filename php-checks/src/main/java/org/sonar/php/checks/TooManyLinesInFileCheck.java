@@ -31,7 +31,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = TooManyLinesInFileCheck.KEY,
-  name = "Files should not have too many lines",
+  name = "文件不应该有太多的行",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @ActivatedByDefault

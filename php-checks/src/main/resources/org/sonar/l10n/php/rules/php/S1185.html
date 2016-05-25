@@ -1,8 +1,8 @@
 <p>
-  Overriding a method just to call the same method from the super class without performing any other actions is useless and misleading. The only time this is justified is in <code>final</code> overriding methods, where the effect is to lock in the parent class behavior. This rule ignores such overrides of <code>equals</code>, <code>hashCode</code> and <code>toString</code>.
+  重写方法如果只是调用父类，而没有其他任何操作，是没有意义而且容易误导的。唯一合理的一种情况是，将重写函数声明为final，其效果等于锁定其父类行为。这条规则会忽略<code>equals</code>, <code>hashCode</code>和<code>toString</code>函数。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 class Child extends Parent {
 
@@ -18,7 +18,7 @@ class Parent {
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 class Child extends Parent {
 
@@ -34,7 +34,7 @@ class Parent {
   }
 }
 </pre>
-<p>or</p>
+<p>或者</p>
 <pre>
 class Child extends Parent {
   // function eliminated

@@ -37,7 +37,7 @@ import java.util.regex.Pattern;
 
 @Rule(
   key = HardCodedCredentialsCheck.KEY,
-  name = "Credentials should not be hard-coded",
+  name = "凭证密钥不应该硬编码",
   priority = Priority.CRITICAL,
   tags = {Tags.CWE, Tags.OWASP_A2, Tags.SANS_TOP25_POROUS, Tags.SECURITY})
 @ActivatedByDefault

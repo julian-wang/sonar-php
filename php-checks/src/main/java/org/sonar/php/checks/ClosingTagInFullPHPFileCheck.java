@@ -32,7 +32,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = ClosingTagInFullPHPFileCheck.KEY,
-  name = "Closing tag \"?>\" should be omitted on files containing only PHP",
+  name = "只包含PHP的文件应该省略闭合标签\"?>\"",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION, Tags.PSR2})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

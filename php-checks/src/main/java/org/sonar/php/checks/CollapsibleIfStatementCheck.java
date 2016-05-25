@@ -35,7 +35,7 @@ import javax.annotation.Nullable;
 
 @Rule(
   key = CollapsibleIfStatementCheck.KEY,
-  name = "Collapsible \"if\" statements should be merged",
+  name = "应合并可折叠的\"if\"语句",
   priority = Priority.MAJOR,
   tags = Tags.CLUMSY)
 @ActivatedByDefault

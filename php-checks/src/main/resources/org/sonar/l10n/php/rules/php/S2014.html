@@ -1,8 +1,8 @@
 <p>
-  <code>$this</code> refers to the current class instance. But static methods can be accessed without instantiating the class, and <code>$this</code> is not available to them. Using <code>$this</code> in a static context will result in runtime errors.
+  <code>$this</code>是指当前类的实例. 但是静态方法可以无需实例化类访问, <code>$this</code>是对它们是不可访问的. 在静态上下文中使用 <code>$this</code>会导致一个运行时错误。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 class Clazz {
   $name=NULL;  // instance variable
@@ -15,7 +15,7 @@ class Clazz {
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 class Clazz {
   $name=NULL;  // instance variable

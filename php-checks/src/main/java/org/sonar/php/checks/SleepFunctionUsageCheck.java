@@ -30,7 +30,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = SleepFunctionUsageCheck.KEY,
-  name = "\"sleep\" should not be called",
+  name = "不应该调用\"sleep\"函数",
   priority = Priority.CRITICAL,
   tags = {Tags.SECURITY})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.SECURITY_FEATURES)

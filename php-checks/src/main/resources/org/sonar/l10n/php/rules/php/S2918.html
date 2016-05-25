@@ -1,6 +1,8 @@
-<p><code>ini_set</code> changes the value of the given configuration option for the duration of the script's execution. While there may be a reason to do this, you should make sure that it's a very good reason indeed, because this is the sort of "magic" change which can cause severe teeth-gnashing and hair tearing when the script needs to be debugged. </p>
-<p>For instance, if the user explicitly turns logging on for a script, but then the script itself uses <code>ini_set('display_errors', 0);</code> to turn logging back off, it is likely that every other aspect of the environment will be examined before, in desperation, the script is read to figure out where the logging is going.</p>
-<h2>Noncompliant Code Example</h2>
+<p><code>ini_set</code>在脚本执行期间改变给定配置的选项值。虽然也许有这样做的理由，但你应该确保它确实是一个很好的理由。因为，这种神奇的改变可能会导致调试时严重的咬牙切齿或者头发撕裂。</p>
+
+<p>例如，如果用户显式的打开脚本的日志，但是脚本自己执行 <code>ini_set('display_errors', 0);</code>关闭了日志，这很可能导致，检查了所有其他的环境之后，才绝望的阅读这段脚本去弄明白日志到底去哪儿了。</p>
+
+<h2>不规范的代码示例</h2>
 
 <pre>
 ini_set('display_errors', 0);  // Noncompliant

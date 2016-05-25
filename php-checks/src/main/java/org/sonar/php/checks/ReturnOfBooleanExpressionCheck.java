@@ -37,7 +37,7 @@ import java.util.List;
 
 @Rule(
   key = ReturnOfBooleanExpressionCheck.KEY,
-  name = "Return of boolean expressions should not be wrapped into an \"if-then-else\" statement",
+  name = "不应该将返回语句包装成一个\"if-then-else\"语句",
   priority = Priority.MINOR,
   tags = Tags.CLUMSY)
 @ActivatedByDefault

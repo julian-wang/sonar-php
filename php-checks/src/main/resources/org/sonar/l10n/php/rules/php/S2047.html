@@ -1,11 +1,12 @@
 <p>
-  Well-named functions can allow the users of your code to understand at a glance what to expect from the function - even before reading the documentation. Toward that end, methods returning a boolean property should have names that start with "is" or "has" rather than with "get".
-</p>
-<p>
-  Note that this rule will only apply to functions that are documented to return a boolean.
+    命名良好的函数可以让代码用户一目了然的了解到函数期望干什么，甚至在阅读文档之前。为此，返回布尔值属性的函数应当以"is"或者"has"而不是"get"开头。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<p>
+   请注意，此规则仅适用于返回布尔值的函数。
+</p>
+
+<h2>不规范的代码示例</h2>
 <pre>
 /**
  * @return boolean
@@ -16,7 +17,7 @@ public function getFoo() // Noncompliant
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 /**
  * @return boolean

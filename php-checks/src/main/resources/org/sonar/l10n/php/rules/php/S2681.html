@@ -1,10 +1,13 @@
-<p>Curly braces can be omitted from a one-line block, such as with an <code>if</code> statement or <code>for</code> loop, but doing so can be misleading and induce bugs.</p>
+<p>
+  在一行块，例如 <code>if</code> 语句或者 <code>for</code>循环中，大括号可以省略，但这样做会产生误导和引入bug。
+</p>
 
-<p>This rule raises an issue when the indentation of the lines after a one-line block indicates an intent to include those lines in the block, but the omission of curly braces
-  means the lines will be unconditionally executed once.</p>
+<p>
+  当一个一行块之后的多行代码缩进，暗示了这些行代码属于这个块时，这条规则会触发。但是花括号的省略意味着这些行会无条件执行一次。</br>
+</p>
 
 
-<h1>Noncompliant Code Example</h1>
+<h1>不规范的代码示例</h1>
 <pre>
 if ($condition)
   firstActionInBlock();
@@ -18,7 +21,7 @@ for ($i = 0; $i < count($array); $i++)
 </pre>
 
 
-<h1>Compliant Solution</h1>
+<h1>规范的解决方案</h1>
 <pre>
 if ($condition) {
   firstActionInBlock();
@@ -33,7 +36,7 @@ for ($i = 0; $i < count($array); $i++) {
 }
 </pre>
 
-<h1>See</h1>
+<h1>参见</h1>
 <ul>
   <li><a href="http://cwe.mitre.org/data/definitions/483.html">MITRE, CWE-483</a> - Incorrect Block Delimitation</li>
 </ul>

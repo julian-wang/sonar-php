@@ -40,7 +40,7 @@ import java.util.List;
 
 @Rule(
   key = UnusedPrivateMethodCheck.KEY,
-  name = "Unused private method should be removed",
+  name = "未被使用的私有方法应该被移除",
   priority = Priority.MAJOR,
   tags = {Tags.UNUSED})
 @ActivatedByDefault

@@ -1,8 +1,8 @@
 <p>
-  Remove literal boolean values from conditional expressions to improve readability. Anything that can be tested for equality with a boolean value must itself be a boolean value, and boolean values can be tested atomically.
+  从条件表达式中删除文本布尔值，以提高可读性。任何可以与布尔值测试相等的值，本身必须是一个布尔值，所以可以自动的测试其布尔值。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 if ($booleanVariable == true) { /* ... */ }
 if ($booleanVariable != true) { /* ... */ }
@@ -15,7 +15,7 @@ $booleanVariable = condition ?  exp : true;
 $booleanVariable = condition ?  exp : false;
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 if ($booleanVariable) { /* ... */ }
 if (!$booleanVariable) { /* ... */ }
@@ -28,5 +28,6 @@ $booleanVariable = !condition ||  exp;
 $booleanVariable = condition && exp;
 </pre>
 
-<h2>Exceptions</h2>
-<p>The use of literal booleans in comparisons which use identity operators (<code>===</code> and <code>!==</code>) are ignored.</p>
+<h2>例外</h2>
+
+<p>在同一性操作符(<code>===</code> 和 <code>!==</code>)中使用布尔值字面值忽略此规则.</p>

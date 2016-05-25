@@ -1,9 +1,12 @@
 <p>
-  Having too many return statements in a function increases the function's essential complexity because the flow of execution is broken each time a return statement is encountered. This makes it harder to read and understand the logic of the function.
+  函数中包含过多的return语句，增加了函数实质的复杂性，因为每次遇到返回语句，都会打断运行流程。这使得它更难读和理解的逻辑功能。
 </p>
 
-<h2>Noncompliant Code Example</h2>
-<p>The following code snippet illustrates this rule with the default threshold of 3:</p>
+<h2>不规范的代码示例</h2>
+
+<p>
+  下面的代码片段显示了一个阈值为3的规则：
+</p>
 <pre>
 function myFunction(){ // Non-Compliant as there are 4 return statements
   if (condition1) {

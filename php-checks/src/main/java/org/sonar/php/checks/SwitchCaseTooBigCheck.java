@@ -33,7 +33,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = SwitchCaseTooBigCheck.KEY,
-  name = "\"switch case\" clauses should not have too many lines",
+  name = "\"switch case\"子句不应该有太多行",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @ActivatedByDefault

@@ -43,7 +43,7 @@ import java.util.List;
 
 @Rule(
   key = DuplicateBranchImplementationCheck.KEY,
-  name = "Two branches in the same conditional structure should not have exactly the same implementation",
+  name = "在相同条件结构中的2个分支不应该有完全相同的执行",
   priority = Priority.MAJOR,
   tags = {Tags.BUG})
 @ActivatedByDefault

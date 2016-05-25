@@ -31,7 +31,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = TooManyCasesInSwitchCheck.KEY,
-  name = "\"switch\" statements should not have too many \"case\" clauses",
+  name = "\"switch\" 语句不应该包含太多的 \"case\" 子句",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @ActivatedByDefault

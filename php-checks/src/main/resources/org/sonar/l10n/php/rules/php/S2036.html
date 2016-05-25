@@ -1,15 +1,15 @@
 <p>
-  Files that define symbols such as classes and variables may be included into many files. Simply performing that inclusion should have no effect on those files other than declaring new symbols. For instance, a file containing a class definition should not also contain side-effects such as <code>print</code> statements that will be evaluated automatically on inclusion. Logic should be segregated into symbol-only files and side-effect-only files. The type of operation which is not allowed in a symbol-definition file includes but is not limited to:
+ 定义例如类、变量等符号的文件，可能会被多个文件引入。简单地说，除了声明新的符号以外，不应该对这些文件有任何影响。例如，一个包含类定义的文件不应该包含类似打印语句的副作用，这会在包含时自动评估。逻辑应该拆分成只包含符号定义的文件和只产生副作用的文件。符号定义文件中不允许的操作类型包括但不限于：
 </p>
 <ul>
-  <li>generating output</li>
-  <li>modifying <code>ini</code> settings</li>
-  <li>emitting errors or exceptions</li>
-  <li>modifying global or static variables</li>
-  <li>reading/writing files</li>
+  <li>产生输出</li>
+  <li>修改<code>ini</code>设置</li>
+  <li>产生错误和异常</li>
+  <li>修改全局或静态变量</li>
+  <li>读写文件</li>
 </ul>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 &lt;?php
 
@@ -20,7 +20,7 @@ class foo {
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 &lt;?php
 

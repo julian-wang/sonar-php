@@ -39,7 +39,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = FileWithSymbolsAndSideEffectsCheck.KEY,
-  name = "Files that define symbols should not cause side-effects",
+  name = "定义符号的文件不应该引起副作用",
   priority = Priority.CRITICAL,
   tags = {Tags.PSR1, Tags.USER_EXPERIENCE})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.SOFTWARE_RELATED_PORTABILITY)

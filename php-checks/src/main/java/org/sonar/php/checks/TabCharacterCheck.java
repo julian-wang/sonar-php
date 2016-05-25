@@ -36,7 +36,7 @@ import java.util.List;
 
 @Rule(
   key = TabCharacterCheck.KEY,
-  name = "Tabulation characters should not be used",
+  name = "不应使用制表符",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION, Tags.PSR2})
 @ActivatedByDefault

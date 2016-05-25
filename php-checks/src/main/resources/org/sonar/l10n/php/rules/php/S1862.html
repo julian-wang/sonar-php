@@ -1,8 +1,11 @@
-<p>A <code>switch</code> and a chain of <code>if</code>/<code>else if</code> statements is evaluated from top to bottom. At most, only one branch will be executed: the first one with a condition that evaluates to <code>true</code>.</p>
-<p>Therefore, duplicating a condition automatically leads to dead code. Usually, this is due to a copy/paste error. At best, it's simply dead code and at worst, it's a bug that is likely to induce further bugs as the code is maintained, and obviously it could lead to unexpected behavior.</p>
-<p>For a <code>switch</code>, if the first case ends with a <code>break</code>, the second case will never be executed, rendering it dead code. Worse there is the risk in this situation that future maintenance will be done on the dead case, rather than on the one that's actually used.</p>
-<p>On the other hand, if the first case does not end with a <code>break</code>, both cases will be executed, but future maintainers may not notice that.</p>
-<h2>Noncompliant Code Example</h2>
+<p>switch语句或者一串if/else if语句是从上到下执行的。大多数时候，只有一个分支会被执行：第一个条件为true的分支.</p>
+
+<p>因此，重复的条件自然会导致不会执行的代码。通常，这是由于复制粘贴错误导致的。最好的情况下，它是不执行的死代码，最坏的情况下，在后续的维护中，这个bug会导致更多的bug，很显然，这会产生意想不到的行为。</p>
+
+<p>对于switch语句，如果第一个case以break结束，则第二个case永远不会被执行，使其成为死代码。更糟糕的，还有一种风险就是未来的维护可能只维护了死代码，而没有维护实际执行的代码。</p>
+
+<p>另一方面，如果第一个case没有以break结束，所有的case都会被执行，但未来的维护人员可能并没有注意到这点。</p>
+<h2>不规范的代码示例</h2>
 
 <pre>
 if ($param == 1)
@@ -27,7 +30,7 @@ switch($i) {
     break;
 }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 
 <pre>
 if ($param == 1)
@@ -49,7 +52,7 @@ switch($i) {
     break;
 }
 </pre>
-<h2>See</h2>
+<h2>参见</h2>
 
 <ul>
 <li> <a href="https://www.securecoding.cert.org/confluence/x/NYA5">CERT, MSC12-C</a> - Detect and remove code that has no effect</li>

@@ -41,7 +41,7 @@ import java.util.List;
 
 @Rule(
   key = MultilineBlocksCurlyBracesCheck.KEY,
-  name = "Multiline blocks should be enclosed in curly braces",
+  name = "多行的块应该包含在大括号里",
   priority = Priority.CRITICAL,
   tags = {Tags.BUG, Tags.CWE})
 @ActivatedByDefault

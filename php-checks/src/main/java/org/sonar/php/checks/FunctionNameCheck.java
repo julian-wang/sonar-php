@@ -37,7 +37,7 @@ import java.util.regex.Pattern;
 
 @Rule(
   key = FunctionNameCheck.KEY,
-  name = "Function names should comply with a naming convention",
+  name = "函数名称应当遵循命名约定",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

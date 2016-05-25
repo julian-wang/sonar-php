@@ -1,10 +1,8 @@
 <p>
-  When either the equality operator in a null test or the logical operator that follows it is reversed,
-  the code has the appearance of safely null-testing the object before dereferencing it.
-  Unfortunately the effect is just the opposite - the object is null-tested and then dereferenced only if it is null, leading to a guaranteed null pointer dereference.
+无论是空检测中的等于操作符还是下面相反的逻辑操作符，解引用之前的空检测代码只是看起来安全的。不幸的是其效果恰恰相反，对象为空-测试然后当且仅当它为空解引用，导致了确保空指针时才解引用。
 </p>
 
-<h2>Noncompliant Code Sample</h2>
+<h2>不规范的代码示例</h2>
 
 <pre>
 if ($obj == null &amp;&amp; $obj->isOpen()) {
@@ -16,7 +14,7 @@ if ($obj != null || $obj->isOpen()) {
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 
 <pre>
 if ($obj == null || $obj->isOpen()) {

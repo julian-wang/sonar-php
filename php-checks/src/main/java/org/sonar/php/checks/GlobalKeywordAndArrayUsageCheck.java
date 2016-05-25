@@ -34,7 +34,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = GlobalKeywordAndArrayUsageCheck.KEY,
-  name = "The \"global\" keyword should not be used",
+  name = "应该使用\"global\"关键字",
   priority = Priority.MAJOR,
   tags = {Tags.CONVENTION})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.DATA_RELIABILITY)

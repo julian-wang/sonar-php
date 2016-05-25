@@ -39,7 +39,7 @@ import java.util.regex.Pattern;
 
 @Rule(
   key = FileHeaderCheck.KEY,
-  name = "Copyright and license headers should be defined",
+  name = "应该定义版权和许可证标题",
   priority = Priority.BLOCKER)
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.SECURITY_FEATURES)
 @SqaleConstantRemediation("5min")
@@ -52,7 +52,7 @@ public class FileHeaderCheck extends PHPVisitorCheck implements CharsetAwareVisi
   private static final Pattern PHP_OPEN_TAG = Pattern.compile(LexicalConstant.PHP_OPENING_TAG);
 
   @RuleProperty(
-    key = "headerFormat",
+    key = "头部格式",
     defaultValue = DEFAULT_HEADER_FORMAT,
     type = "TEXT")
   public String headerFormat = DEFAULT_HEADER_FORMAT;

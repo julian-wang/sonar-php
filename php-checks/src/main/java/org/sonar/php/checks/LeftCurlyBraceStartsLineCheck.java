@@ -53,7 +53,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = LeftCurlyBraceStartsLineCheck.KEY,
-  name = "An open curly brace should be located at the beginning of a line",
+  name = "开括号应该位于一行的开始",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

@@ -1,8 +1,8 @@
 <p>
-  References in a class to static class members (fields or methods) can be made using either <code>self::$var</code> or <code>static::$var</code> (introduced in 5.3). The difference between the two is one of scope. Confusingly, in subclasses, the use of <code>self::</code> references the original definition of the member, i.e. the superclass version, rather than any override at the subclass level. <code>static::</code>, on the other hand, references the class that was called at runtime.
+在一个类中引用静态成员（字段或函数）可以使用<code>self::$var</code> 或者 <code>static::$var</code>（在PHP5.3中引入）。这两者的区别是作用域。令人困惑的是，在子类中使用<code>self::</code>引用的是原始定义的成员，即父类版本的，而不是子类中其他任何重写的版本。另一方面，<code>static::</code>在允许时引用当前调用类的。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 &lt;?php
 
@@ -28,7 +28,7 @@ $myBall = new Ball();
 $myBall::status();                          // Will print "Sticks are fun!"
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 &lt;?php
 
@@ -54,9 +54,9 @@ $myBall = new Ball();
 $myBall::status();             // Will print "Balls are fun!"
 </pre>
 
-<h2>Exceptions</h2>
+<h2>例外</h2>
 <p>
-  No issue is raised when <code>self</code> is used in a class field declaration
+  在一个类的字段声明中使用 <code>self</code>并不会触发这条规则.
 </p>
 <pre>
 class A {

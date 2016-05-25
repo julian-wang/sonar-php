@@ -1,13 +1,14 @@
-<p>Shared coding conventions allow teams to collaborate efficiently. Defining and using global variables and global functions, when the convention dictates OOP can be confusing and difficult to use properly for multiple reasons:</p>
+
+<p>共享编码约定使得团队合作有效。当约定面向对象编程时，定义和使用全局变量或全局函数会造成混淆，而且难以正确使用，多种原因如下：</p>
 <ul>
-<li> You run the risk of name clashes. </li>
-<li> Global functions must be stateless, or they can cause difficult-to-track bugs. </li>
-<li> Global variables can be updated from anywhere and may no longer hold the value you expect.</li>
-<li> It is difficult to properly test classes that use global functions. </li>
+<li>冒着命名冲突的风险．</li>
+<li>全局函数必须是无状态的，否则他们会导致难以跟踪的错误．</li>
+<li>全局变量可以在任何地方更新，可能就不再是你期望的值了．</li>
+<li>很难用全局函数正确的测试类．</li>
 </ul>
-<p>Instead of being declared globally, such variables and functions should be moved into a class, potentially marked <code>static</code>, so they can be used without a class instance. </p>
-<p>This rule  checks that only Object Oriented Programming is used and that no functions or procedures are declared outside of a class.</p>
-<h2>Noncompliant Code Example</h2>
+<p>这些变量和函数应该移到一个类中，而不是声明为全局，可能需要标记成<code>static</code>的，以便不生成类实例而直接使用他们．</p>
+<p>这条规则检测是否只是用面向对象编程，而且没有函数或过程在类外声明．</p>
+<h2>不规范的代码示例</h2>
 
 <pre>
 &lt;?php
@@ -22,7 +23,7 @@ class MyClass {
     //...
 }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 
 <pre>
 &lt;?php 

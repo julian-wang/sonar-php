@@ -35,7 +35,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = TooManyFunctionParametersCheck.KEY,
-  name = "Functions should not have too many parameters",
+  name = "函数不应包含太多的参数",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @ActivatedByDefault
@@ -56,7 +56,7 @@ public class TooManyFunctionParametersCheck extends PHPVisitorCheck {
   int max = DEFAULT_MAX;
 
   @RuleProperty(
-    key = "constructorMax",
+    key = "构造函数最大值",
     defaultValue = "" + DEFAULT_CONSTRUCTOR_MAX)
   int constructorMax = DEFAULT_CONSTRUCTOR_MAX;
 

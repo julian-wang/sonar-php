@@ -30,7 +30,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = ElseIfSequenceKeywordUsageCheck.KEY,
-  name = "\"elseif\" keyword should be used in place of \"else if\" keywords",
+  name = "\"elseif\" 关键字应当用 \"else if\" 关键字替换",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION, Tags.PSR2})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

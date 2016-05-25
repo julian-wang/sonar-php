@@ -44,7 +44,7 @@ import java.util.List;
 
 @Rule(
   key = FormattingStandardCheck.KEY,
-  name = "Source code should comply with formatting standards",
+  name = "源代码应符合格式标准",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION, Tags.PSR2})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

@@ -1,13 +1,13 @@
 <p>
-  When only the condition expression is defined in a <code>for</code> loop, but the init and increment expressions are missing, a <code>while</code> loop should be used instead to increase readability.
+  当条件表达式只有一个循环定义，而没有初始化和自增时，应当用<code>while</code> 循环替代<code>for</code>循环，以提高代码可读性。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 for(;condition;) { /*...*/ }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 while(condition) { /*...*/ }
 </pre>

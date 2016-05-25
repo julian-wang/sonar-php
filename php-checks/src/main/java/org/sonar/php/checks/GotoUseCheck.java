@@ -30,7 +30,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = GotoUseCheck.KEY,
-  name = "\"goto\" statement should not be used",
+  name = "不应当再使用\"goto\"语句",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD, Tags.MISRA})
 @ActivatedByDefault

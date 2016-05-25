@@ -37,7 +37,7 @@ import java.util.regex.Pattern;
 
 @Rule(
   key = TrailingWhitespaceCheck.KEY,
-  name = "Lines should not end with trailing whitespaces",
+  name = "代码行不应该以尾随的空格结束",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION, Tags.PSR2})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

@@ -36,7 +36,7 @@ import java.util.regex.Pattern;
 
 @Rule(
   key = LowerCaseColorCheck.KEY,
-  name = "Colors should be defined in upper case",
+  name = "应该用大写定义颜色",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

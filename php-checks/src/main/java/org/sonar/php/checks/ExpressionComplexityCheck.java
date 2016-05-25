@@ -37,7 +37,7 @@ import java.util.List;
 
 @Rule(
   key = ExpressionComplexityCheck.KEY,
-  name = "Expressions should not be too complex",
+  name = "表达式不应该太过复杂",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @ActivatedByDefault

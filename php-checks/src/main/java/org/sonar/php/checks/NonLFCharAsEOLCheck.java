@@ -36,7 +36,7 @@ import java.nio.charset.Charset;
 
 @Rule(
   key = NonLFCharAsEOLCheck.KEY,
-  name = "Only LF character (Unix-like) should be used to end lines",
+  name = "只应使用lf字符（Unix格式）来结束一行",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION, Tags.PSR2})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

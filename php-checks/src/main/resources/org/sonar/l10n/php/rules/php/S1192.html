@@ -1,11 +1,12 @@
 <p>
-  Duplicated string literals make the process of refactoring error-prone, since you must be sure to update all occurrences.
-</p>
-<p>
-  On the other hand, constants can be referenced from many places, but only need to be updated in a single place.
+  重复的字符串使重构的过程非常容易出错，因为你必须更新所有字面值出现的地方。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<p>
+  另一方面，常量可以被多个地方引用，但是只需要在一个地方更新。
+</p>
+
+<h2>不规范的代码示例</h2>
 <pre>
 function run() {
   prepare('action1');          // Non-Compliant - 'action1' is duplicated 3 times
@@ -14,7 +15,7 @@ function run() {
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 ACTION_1 = 'action1';
 
@@ -25,5 +26,7 @@ function run() {
 }
 </pre>
 
-<h2>Exceptions</h2>
-<p>To prevent generating some false-positives, literals having less than 5 characters are excluded.</p>
+<h2>例外</h2>
+<p>
+  （为了防止产生一些误判，排除了长度小于5个字符的字符串。）
+</p>

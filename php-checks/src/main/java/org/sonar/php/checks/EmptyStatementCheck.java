@@ -30,7 +30,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = EmptyStatementCheck.KEY,
-  name = "Empty statements should be removed",
+  name = "应当删除空语句",
   priority = Priority.MINOR,
   tags = {Tags.CERT, Tags.UNUSED, Tags.MISRA})
 @ActivatedByDefault

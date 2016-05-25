@@ -1,5 +1,6 @@
-<p>Having two <code>cases</code> in the same <code>switch</code> statement or branches in the same <code>if</code> structure  with the same implementation is at best duplicate code, and at worst a coding error. If the same logic is truly needed for both instances, then in an <code>if</code> structure they should be combined, or for a <code>switch</code>, one should fall through to the other.</p>
-<h2>Noncompliant Code Example</h2>
+<p>在同一个switch语句中有两个case执行同样的语句，或者有同一if的多个分支结构执行同样的代码，最坏情况下是编码错误。如果确实需要同样的逻辑，那么应该合并两个if语句，或者应该在switch语句中执行通过另一个分支。</p>
+
+<h2>不规范的代码示例</h2>
 
 <pre>
 switch ($i) {
@@ -35,7 +36,7 @@ else {
   doOneMoreThing(); // Noncompliant; duplicates then-branch
 }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 
 <pre>
 switch ($i) {
@@ -61,7 +62,7 @@ else {
 
 doOneMoreThing();
 </pre>
-<p>or </p>
+<p>或者</p>
 <pre>
 switch ($i) {
   case 1: 

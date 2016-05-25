@@ -42,7 +42,7 @@ import java.util.List;
 
 @Rule(
   key = DuplicateConditionCheck.KEY,
-  name = "Related \"if/else if\" statements and \"cases\" in a \"switch\" should not have the same condition",
+  name = "\"if/else if\"语句和\"switch\"中的\"cases\"语句不应该有相同的条件",
   priority = Priority.CRITICAL,
   tags = {Tags.BUG, Tags.CERT, Tags.PITFALL, Tags.UNUSED})
 @ActivatedByDefault

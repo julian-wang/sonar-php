@@ -1,6 +1,8 @@
-<p>Using the same value on either side of a binary operator is almost always a mistake. In the case of logical operators, it is either a copy/paste error and therefore a bug, or it is simply wasted code, and should be simplified. In the case of bitwise operators and most binary mathematical operators, having the same value on both sides of an operator yields predictable results, and should be simplified.</p>
-<p>This rule ignores <code>*</code>, <code>+</code>, and <code>=</code>. </p>
-<h2>Noncompliant Code Example</h2>
+<p>在一个双目运算符两边使用相同的值几乎总是一个错误。逻辑运算符情况下，要么这是一个拷贝/粘贴错误，要么这是一个bug，又或者这仅仅是一段没用的代码而应该被简化。位运算符或大多数二进制数学运算符情况下，在运算符两边具有同样的值可以预见结果，而应该简化。</p>
+
+<p>这条规则会忽略<code>*</code>, <code>+</code> 和 <code>=</code>符号。</p>
+
+<h2>不规范的代码示例</h2>
 
 <pre>
 if ( $a == $a ) { // always true
@@ -19,7 +21,7 @@ if ( $a == $b || $a == $b ) { // if the first one is true, the second one is too
 $j = 5 / 5; //always 1
 $k = 5 - 5; //always 0
 </pre>
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 
 <pre>
 doZ();
@@ -34,14 +36,14 @@ if ( $a == $b ) {
 $j = 1;
 $k = 0;
 </pre>
-<h2>Exceptions</h2>
+<h2>例外</h2>
 
-<p>Left-shifting 1 onto 1 is common in the construction of bit masks, and is ignored.</p>
+<p>将1左移1是构建掩码中常见的操作，会忽略这条规则</p>
 <pre>
 $i = 1 &lt;&lt; 1; // Compliant
 $j = $a &lt;&lt; $a; // Noncompliant
 </pre>
-<h2>See</h2>
+<h2>参见</h2>
 
 <ul>
 <li> <a href="https://www.securecoding.cert.org/confluence/x/NYA5">CERT, MSC12-C</a> - Detect and remove code that has no effect</li>

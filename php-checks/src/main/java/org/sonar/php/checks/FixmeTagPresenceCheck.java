@@ -27,7 +27,7 @@ import org.sonar.squidbridge.annotations.NoSqale;
 
 @Rule(
   key = FixmeTagPresenceCheck.KEY,
-  name = "\"FIXME\" tags should be handled",
+  name = "\"FIXME\"标签需要被处理",
   priority = Priority.MAJOR)
 @ActivatedByDefault
 @NoSqale

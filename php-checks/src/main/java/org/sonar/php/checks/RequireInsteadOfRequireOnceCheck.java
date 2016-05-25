@@ -33,7 +33,7 @@ import java.util.List;
 
 @Rule(
   key = RequireInsteadOfRequireOnceCheck.KEY,
-  name = "\"require_once\" and \"include_once\" should be used instead of \"require\" and \"include\"",
+  name = "应该使用\"require_once\"和\"include_once\"替代\"require\"和\"include\"",
   priority = Priority.CRITICAL,
   tags = {Tags.BUG})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.LOGIC_RELIABILITY)

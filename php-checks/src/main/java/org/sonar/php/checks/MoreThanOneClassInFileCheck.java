@@ -31,7 +31,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = MoreThanOneClassInFileCheck.KEY,
-  name = "Files should contain only one class or interface each",
+  name = "每个文件只应该包含一个类或一个接口",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.UNDERSTANDABILITY)

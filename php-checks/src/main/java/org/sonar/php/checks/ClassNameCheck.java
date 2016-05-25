@@ -36,7 +36,7 @@ import java.util.regex.Pattern;
 
 @Rule(
   key = ClassNameCheck.KEY,
-  name = "Class names should comply with a naming convention",
+  name = "类名称应遵循命名约定",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @ActivatedByDefault

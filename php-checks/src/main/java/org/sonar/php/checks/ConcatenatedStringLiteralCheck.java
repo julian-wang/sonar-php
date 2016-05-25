@@ -35,7 +35,7 @@ import java.util.List;
 
 @Rule(
   key = ConcatenatedStringLiteralCheck.KEY,
-  name = "String literals should not be concatenated",
+  name = "不应该连接字面值字符串",
   priority = Priority.MINOR)
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)
 @SqaleConstantRemediation("5min")

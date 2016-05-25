@@ -1,13 +1,13 @@
 <p>
-  Superglobal variables are predefined variables available in all scopes throughout a script. However, accessing them directly is considered bad practice. Instead, they should be accessed through an object or framework that handles sanitation and validation.
+  全局变量是在整个脚本的范围内可以访问的预定义变量。然而，直接访问它们被认为是不好的做法。相反，应该通过一个对象或者一个处理其有效性的框架来访问它们。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 $name = $_POST['name'];
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 $name = $this->params()->fromPost('name');
 </pre>

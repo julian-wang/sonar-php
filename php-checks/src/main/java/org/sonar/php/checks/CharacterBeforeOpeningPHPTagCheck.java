@@ -33,7 +33,7 @@ import java.util.regex.Pattern;
 
 @Rule(
   key = "S2000",
-  name = "Files should not contain characters before \"<?php\"",
+  name = "文件不应该在\"<?php\"之前包含其他字符",
   priority = Priority.CRITICAL,
   tags = {Tags.USER_EXPERIENCE})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.INSTRUCTION_RELIABILITY)

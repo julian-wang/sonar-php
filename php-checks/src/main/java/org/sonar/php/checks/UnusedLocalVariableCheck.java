@@ -46,7 +46,7 @@ import java.util.List;
 
 @Rule(
   key = UnusedLocalVariableCheck.KEY,
-  name = "Unused local variables should be removed",
+  name = "未使用的局部变量应该被删除",
   priority = Priority.MAJOR,
   tags = {Tags.UNUSED})
 @ActivatedByDefault

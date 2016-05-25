@@ -33,7 +33,7 @@ import java.util.List;
 
 @Rule(
   key = SilencedErrorsCheck.KEY,
-  name = "Errors should not be silenced",
+  name = "不应该抑制报错",
   priority = Priority.MAJOR,
   tags = {Tags.PITFALL})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.EXCEPTION_HANDLING)

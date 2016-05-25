@@ -1,13 +1,13 @@
 <p>
-  Both <code>php_sapi_name()</code> and the <code>PHP_SAPI</code> constant give the same value. But calling the method is less efficient that simply referencing the constant.
+   <code>php_sapi_name()</code>和<code>PHP_SAPI</code>常量都会得到同样的值。但是调用函数比直接引用常量效率要低。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 if (php_sapi_name() == 'test') { ... }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 if (PHP_SAPI == 'test') { ... }
 </pre>

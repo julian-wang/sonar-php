@@ -31,7 +31,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = DirectlyAccessingSuperGlobalCheck.KEY,
-  name = "Superglobals should not be accessed directly",
+  name = "不应该直接访问超级全局变量",
   priority = Priority.MAJOR,
   tags = {Tags.SECURITY})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.INPUT_VALIDATION_AND_REPRESENTATION)

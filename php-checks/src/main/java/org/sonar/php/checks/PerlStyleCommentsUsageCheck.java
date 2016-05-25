@@ -29,7 +29,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = PerlStyleCommentsUsageCheck.KEY,
-  name = "Perl-style comments should not be used",
+  name = "不要使用Perl风格的注释",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

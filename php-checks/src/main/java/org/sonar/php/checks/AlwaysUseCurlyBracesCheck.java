@@ -38,7 +38,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = AlwaysUseCurlyBracesCheck.KEY,
-  name = "Control structures should always use curly braces",
+  name = "控制结构应该总使用花括号",
   priority = Priority.MAJOR,
   tags = {Tags.CERT, Tags.CWE, Tags.MISRA, Tags.PITFALL})
 @ActivatedByDefault

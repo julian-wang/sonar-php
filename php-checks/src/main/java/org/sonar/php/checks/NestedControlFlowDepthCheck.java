@@ -44,7 +44,7 @@ import java.util.List;
 
 @Rule(
   key = NestedControlFlowDepthCheck.KEY,
-  name = "Control flow statements \"if\", \"for\", \"while\", \"switch\" and \"try\" should not be nested too deeply",
+  name = "控制流语句\"if\", \"for\", \"while\", \"switch\" 和 \"try\" 不应该嵌套太深",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @ActivatedByDefault

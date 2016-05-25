@@ -38,7 +38,7 @@ import java.util.List;
 
 @Rule(
   key = ModifiersOrderCheck.KEY,
-  name = "Modifiers should be declared in the correct order",
+  name = "修饰符应以正确的顺序声明",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION, Tags.PSR2})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.READABILITY)

@@ -30,7 +30,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = ExitOrDieUsageCheck.KEY,
-  name = "\"exit(...)\" and \"die(...)\" statements should not be used",
+  name = "不应该再使用\"exit(...)\" and \"die(...)\"语句",
   priority = Priority.CRITICAL)
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.ERRORS)
 @SqaleConstantRemediation("20min")

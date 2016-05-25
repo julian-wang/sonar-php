@@ -32,7 +32,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = "S1997",
-  name = "Files should not contain inline HTML",
+  name = "文件不应该包含内联的HTML",
   priority = Priority.MINOR,
   tags = {Tags.CONVENTION, Tags.BRAIN_OVERLOAD})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.UNDERSTANDABILITY)

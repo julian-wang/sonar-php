@@ -1,11 +1,13 @@
 <p>
-The <code>exit(...)</code> and <code>die(...)</code> statements should absolutely not be used in Web PHP pages as this might lead to a very bad user experience. In such case, the end user might have the feeling that the web site is down or has encountered a fatal error.
-</p>
-<p>
-But of course PHP can also be used to develop command line application and in such case use of <code>exit(...)</code> or <code>die(...)</code> statement can be justified but must remain limited and not spread all over the application. We expect exceptions to be used to handle errors and those exceptions should be caught just before leaving the application to specify the exit code with help of <code>exit(...)</code> or <code>die(...)</code> statements.
+    <code>exit(...)</code> 和 <code>die(...)</code>语句不应当在PHP网站页面中使用，这会导致非常糟糕的用户体验。在这种情况下，最终用户可能有这样的感觉：该网站宕机了或者遇到致命错误了。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<p>
+    当然，也可以使用PHP开发命令行程序，在这种情况下使用<code>exit(...)</code>或<code>die(...)</code>语句是合理的，但必须做出限制，不至于遍及整个程序。我们希望处理错误时使用异常，这些异常应该在离开程序前被捕获，在<code>exit(...)</code> 或 <code>die(...)</code>语句的帮助下明确退出代码。
+</p>
+
+
+<h2>不规范的代码示例</h2>
 <pre>
 class Foo {
     public function bar($param)  {
@@ -16,7 +18,7 @@ class Foo {
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 class Foo {
     public function bar($param)  {

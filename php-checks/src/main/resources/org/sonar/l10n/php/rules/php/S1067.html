@@ -1,15 +1,15 @@
 <p>
-  The complexity of an expression is defined by the number of <code>&&</code>, <code>||</code> and <code>condition ? ifTrue : ifFalse</code> operators it contains.</br>
-  A single expression's complexity should not become too high to keep the code readable.
+  一个表达式的复杂性是由 <code>&&</code>, <code>||</code> and <code>condition ? ifTrue : ifFalse</code> 等操作符定义的。一个单一的表达式的复杂性不应该变得太高，以保持代码的可读性。
 </p>
 
-<h2>Noncompliant Code Example</h2>
-<p>With the default threshold value of 3</p>
+<h2>不规范的代码示例</h2>
+
+<p>默认阈值为3</p>
 <pre>
 if ((($condition1 && $condition2) || ($condition3 && $condition4)) && $condition5) { ... }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 if ( (my_first_condition() || my_second_condition()) && my_last_condition()) { ... }
 </pre>

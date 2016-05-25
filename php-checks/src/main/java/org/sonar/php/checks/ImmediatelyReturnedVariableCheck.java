@@ -45,7 +45,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = ImmediatelyReturnedVariableCheck.KEY,
-  name = "Local variables should not be declared and then immediately returned or thrown",
+  name = "不能声明本地变量后立即返回",
   priority = Priority.MINOR,
   tags = {Tags.CLUMSY})
 @ActivatedByDefault

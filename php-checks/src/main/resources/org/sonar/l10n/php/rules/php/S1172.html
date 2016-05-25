@@ -1,23 +1,23 @@
 <p>
-  Unused parameters are misleading. Whatever the value passed to such parameters is, the behavior will be the same.
+ 没有使用的参数会产生误导。无论传递给这个参数什么值，函数的行为都是相同的。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 function doSomething($a, $b) { // "$a" is unused
   return compute($b);
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 function doSomething($b) {
   return compute($b);
 }
 </pre>
 
-<h2>Exceptions</h2>
-<p>Functions in classes that override a class or implement interfaces are ignored.</p>
+<h2>例外</h2>
+<p>重写类或者实现接口的函数会被忽略。</p>
 <pre>
 class C extends B {
 
@@ -28,7 +28,7 @@ class C extends B {
 }
 </pre>
 
-<h2>See</h2>
+<h2>参见</h2>
 <ul>
   <li>MISRA C++:2008, 0-1-11</li>
   <li>MISRA C:2012, 2.7</li>

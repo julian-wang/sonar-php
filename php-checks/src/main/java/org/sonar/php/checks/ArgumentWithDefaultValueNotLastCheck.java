@@ -37,7 +37,7 @@ import java.util.List;
 
 @Rule(
   key = ArgumentWithDefaultValueNotLastCheck.KEY,
-  name = "Method arguments with default value should be last",
+  name = "函数的默认参数应该放到最后",
   priority = Priority.CRITICAL,
   tags = {Tags.BUG, Tags.PSR2})
 @ActivatedByDefault

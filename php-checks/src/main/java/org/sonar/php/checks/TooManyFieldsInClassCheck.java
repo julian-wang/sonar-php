@@ -40,7 +40,7 @@ import java.util.List;
 
 @Rule(
   key = TooManyFieldsInClassCheck.KEY,
-  name = "Classes should not have too many fields",
+  name = "类不应该包含太多字段",
   priority = Priority.MAJOR,
   tags = {Tags.BRAIN_OVERLOAD})
 @SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.ARCHITECTURE_CHANGEABILITY)
@@ -54,12 +54,12 @@ public class TooManyFieldsInClassCheck extends PHPVisitorCheck {
   public static final boolean DEFAULT_COUNT_NON_PUBLIC = true;
 
   @RuleProperty(
-    key = "maximumFieldThreshold",
+    key = "字段的最大阈值",
     defaultValue = "" + DEFAULT_MAX)
   int maximumFieldThreshold = DEFAULT_MAX;
 
   @RuleProperty(
-    key = "countNonpublicFields",
+    key = "是否计算非公开字段",
     type = "BOOLEAN",
     defaultValue = "" + DEFAULT_COUNT_NON_PUBLIC)
   boolean countNonpublicFields = DEFAULT_COUNT_NON_PUBLIC;

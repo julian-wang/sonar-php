@@ -35,7 +35,7 @@ import java.util.regex.Pattern;
 
 @Rule(
   key = TrailingCommentCheck.KEY,
-  name = "Comments should not be located at the end of lines of code",
+  name = "注释不应放在代码行结束",
   priority = Priority.INFO,
   tags = {Tags.CONVENTION})
 @ActivatedByDefault
@@ -49,7 +49,7 @@ public class TrailingCommentCheck extends PHPVisitorCheck {
   public static final String DEFAULT_LEGAL_COMMENT_PATTERN = "^(//|#)\\s*+[^\\s]++$";
 
   @RuleProperty(
-    key = "legalTrailingCommentPattern",
+    key = "合法的尾随注释模式",
     defaultValue = DEFAULT_LEGAL_COMMENT_PATTERN)
   String legalCommentPattern = DEFAULT_LEGAL_COMMENT_PATTERN;
 

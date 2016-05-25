@@ -43,7 +43,7 @@ import java.util.List;
 
 @Rule(
   key = "S1697",
-  name = "Short-circuit logic should be used to prevent null pointer dereferences in conditionals",
+  name = "短路逻辑应该被用来防止条件语句中空指针引用",
   priority = Priority.BLOCKER,
   tags = {Tags.BUG})
 @ActivatedByDefault

@@ -42,7 +42,7 @@ import org.sonar.squidbridge.annotations.SqaleSubCharacteristic;
 
 @Rule(
   key = SelfKeywordUsageCheck.KEY,
-  name = "Static members should be referenced with \"static::\"",
+  name = "静态成员应该通过\"static::\"引用",
   priority = Priority.MAJOR,
   tags = {Tags.PITFALL})
 @ActivatedByDefault

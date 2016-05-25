@@ -1,9 +1,9 @@
 <p>
-  Declaring a variable only to immediately return [or throw] it is a bad practice.<br/>
-  Some developers argue that the practice improves code readability, because it enables them to explicitly name what is being returned. However, this variable is an internal implementation detail that is not exposed to the callers of the method. The method name should be sufficient for callers to know exactly what will be returned.
+ 声明一个变量，只是立即返回［或抛出］是一种坏的实践。<br/>
+  一些开发人员认为，这种做法提高了代码的可读性，因为这允许显式命名所返回的值。然而，这个变量作为内部实现的细节，是不会暴露给函数的调用者。对调用者而言，函数名应该足够明确什么会被返回。
 </p>
 
-<h2>Noncompliant Code Example</h2>
+<h2>不规范的代码示例</h2>
 <pre>
 function compute_duration_in_milliseconds() {
   $duration = ((($hours * 60) + $minutes) * 60 + $seconds ) * 1000 ;
@@ -11,7 +11,7 @@ function compute_duration_in_milliseconds() {
 }
 </pre>
 
-<h2>Compliant Solution</h2>
+<h2>规范的解决方案</h2>
 <pre>
 function compute_duration_in_milliseconds() {
   return ((($hours * 60) + $minutes) * 60 + $seconds ) * 1000;
