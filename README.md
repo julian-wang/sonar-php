@@ -1,7 +1,6 @@
 Sonar PHP plugin（L10N-zh）
 =========================
 
-### Build status
 
 This is the Sonar PHP plugin
 
