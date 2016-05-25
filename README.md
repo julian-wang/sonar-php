@@ -1,4 +1,4 @@
-Sonar PHP plugin
+Sonar PHP plugin（L10N-zh）
 =========================
 
 ### Build status
